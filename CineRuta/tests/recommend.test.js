@@ -1,0 +1,10 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');
+const catalogo=require('../src/catalog');const {edad,recomendar}=require('../src/recommend');
+const hoy=new Date('2026-11-19T12:00:00Z');
+const usuario={id:1,fechaNacimiento:'2010-11-20',generos:['Aventura']};
+test('edad respeta cumpleaños todavía no cumplido',()=>assert.equal(edad(usuario.fechaNacimiento,hoy),15));
+test('no recomienda títulos para mayores de edad',()=>{const r=recomendar(usuario,catalogo,[],[],hoy);assert.ok(r.every(p=>p.edadMinima<=15));});
+test('excluye contenido que ya se vio',()=>{const r=recomendar(usuario,catalogo,[{usuarioId:1,contenidoId:1}],[],hoy);assert.ok(!r.some(p=>p.id===1));});
+test('prioriza géneros preferidos',()=>{const r=recomendar(usuario,catalogo,[],[],hoy);assert.ok(r[0].generos.includes('Aventura'));});
+test('sin preferencias presenta tendencias por popularidad',()=>{const r=recomendar({...usuario,generos:[]},catalogo,[],[],hoy);assert.equal(r[0].id,1);});
+test('calificaciones altas influyen en recomendaciones',()=>{const u={...usuario,generos:[]};const r=recomendar(u,catalogo,[],[{usuarioId:1,contenidoId:3,puntaje:5}],hoy);assert.ok(r[0].generos.some(g=>catalogo.find(p=>p.id===3).generos.includes(g)));});

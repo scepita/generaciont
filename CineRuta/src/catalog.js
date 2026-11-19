@@ -1,0 +1,15 @@
+// Datos ficticios: este proyecto no reproduce contenido audiovisual.
+module.exports = [
+  {id:1,titulo:'Horizonte Rojo',tipo:'Película',generos:['Ciencia ficción','Aventura'],director:'M. Vega',actores:['L. Reyes','S. Paz'],duracion:124,sinopsis:'Una tripulación descubre una señal desconocida cerca de Marte.',edadMinima:13,popularidad:97,emoji:'🚀'},
+  {id:2,titulo:'La Última Estación',tipo:'Serie',generos:['Drama','Misterio'],director:'C. Molina',actores:['A. Luna','D. Ortiz'],duracion:48,sinopsis:'Una estación de tren conecta historias que parecían no tener relación.',edadMinima:13,popularidad:90,emoji:'🚉'},
+  {id:3,titulo:'Bosque Adentro',tipo:'Película',generos:['Aventura','Fantasía'],director:'V. Ríos',actores:['N. Díaz','P. Sol'],duracion:102,sinopsis:'Dos hermanos siguen las pistas de un mapa antiguo.',edadMinima:7,popularidad:86,emoji:'🌲'},
+  {id:4,titulo:'Código Medianoche',tipo:'Serie',generos:['Suspenso','Misterio'],director:'E. Torres',actores:['M. Soto','J. Vera'],duracion:42,sinopsis:'Un mensaje anónimo pone a prueba a una investigadora.',edadMinima:16,popularidad:93,emoji:'🕵️'},
+  {id:5,titulo:'Ritmo de Barrio',tipo:'Película',generos:['Comedia','Música'],director:'F. Acosta',actores:['R. Salas','C. Ferreyra'],duracion:95,sinopsis:'Un grupo de amigos organiza un festival para salvar su club.',edadMinima:0,popularidad:88,emoji:'🎸'},
+  {id:6,titulo:'El Caso del Faro',tipo:'Película',generos:['Suspenso','Drama'],director:'B. Navarro',actores:['T. León','A. Vidal'],duracion:110,sinopsis:'Un periodista investiga un secreto escondido en la costa.',edadMinima:16,popularidad:81,emoji:'🌊'},
+  {id:7,titulo:'Planeta Azul',tipo:'Serie',generos:['Documental','Naturaleza'],director:'I. Campos',actores:['Narración: C. Funes'],duracion:35,sinopsis:'Un viaje para conocer ecosistemas sorprendentes.',edadMinima:0,popularidad:94,emoji:'🐬'},
+  {id:8,titulo:'Café de Domingo',tipo:'Película',generos:['Romance','Comedia'],director:'L. Duarte',actores:['E. Pérez','G. Martín'],duracion:99,sinopsis:'Dos desconocidos cruzan sus caminos en un café de barrio.',edadMinima:7,popularidad:76,emoji:'☕'},
+  {id:9,titulo:'Noche de Sombras',tipo:'Película',generos:['Terror','Suspenso'],director:'O. Cabrera',actores:['J. Ponce','M. Alba'],duracion:106,sinopsis:'Una casa abandonada esconde una historia inquietante.',edadMinima:18,popularidad:91,emoji:'🌑'},
+  {id:10,titulo:'Misión Submarina',tipo:'Serie',generos:['Ciencia ficción','Aventura'],director:'S. Benítez',actores:['P. Castro','L. Cano'],duracion:47,sinopsis:'Un equipo busca una ciudad desconocida bajo el océano.',edadMinima:13,popularidad:85,emoji:'🪸'},
+  {id:11,titulo:'El Último Gol',tipo:'Película',generos:['Deportes','Drama'],director:'A. Romero',actores:['F. Méndez','I. Silva'],duracion:108,sinopsis:'Un equipo juvenil intenta superar una temporada complicada.',edadMinima:0,popularidad:89,emoji:'⚽'},
+  {id:12,titulo:'Recetas de Familia',tipo:'Serie',generos:['Comedia','Drama'],director:'N. López',actores:['D. Rivero','M. Ruiz'],duracion:32,sinopsis:'Una familia reabre el restaurante que heredó de sus abuelos.',edadMinima:0,popularidad:83,emoji:'🍝'}
+];
